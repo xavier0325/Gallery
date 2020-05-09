@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"> -->
+		<title>画廊_轮播图</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-ico" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body onload="init()">
+		<h1 id="head" style="text-align: center;width: 100%;">画 廊</h1>
+		<div id="banner" onmouseover="showText()" onmouseout="hideText()">
+			<img src="img/before.jpg" id="myImg" />
+			<div id="textImg">
+				<h2 id="textTitle"></h2>
+				<p id="textMain">...</p>
+			</div>
+		</div>
+		<div id="page">
+			<div id="prepage" onclick="preImg()">上一页</div>
+			<div id="pagecount">1</div>
+			<div id="nextpage" onclick="nextImg()">下一页</div>
+		</div>
+	</body>
+</html>
